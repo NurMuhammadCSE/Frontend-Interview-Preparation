@@ -1,0 +1,260 @@
+### How Express Error Handling Works?
+
+Express.js-এ error handling একটি গুরুত্বপূর্ণ বিষয়, কারণ এটি অ্যাপ্লিকেশনটিকে নিরাপদ ও কার্যকরী রাখতে সাহায্য করে। 
+
+১. Error Handling Middleware:
+Error handling middleware সাধারণত চারটি প্যারামিটার নিয়ে গঠিত:
+
+err: Error object
+req: Request object
+res: Response object
+next: Function to pass control to the next middleware
+
+Error handling middleware সবসময় request-handling middleware এর পরে যুক্ত করতে হবে, কারণ Express এক্ষেত্রে middleware-এর মধ্যে error handling করার জন্য চূড়ান্ত অবস্থান হিসেবে error-handling middleware কে প্রাধান্য দেয়।
+
+1. Express.js-এ error handling middleware ব্যবহার করা হয় error management-এর জন্য।
+2.Error-handling middleware-এ err, req, res, এবং next প্যারামিটার থাকে এবং এটি middleware-এর মধ্যে error handling করতে ব্যবহৃত হয়।
+3. next(err) ফাংশন কল করে error-handling middleware-এ control পাঠানো হয়।
+4. Custom error messages, status codes এবং error logging করার সুবিধা থাকে, যা ডিবাগিংকে সহজ করে।
+
+
+### How are static files served in Express?
+
+Express.js-এ static files (যেমন, HTML, CSS, JavaScript, images ইত্যাদি) সার্ভ করার জন্য একটি built-in middleware ফাংশন রয়েছে। এই middleware ব্যবহার করে সহজেই যেকোনো static ফাইল সার্ভ করা যায়।
+
+Static Files সার্ভ করার জন্য express.static() Middleware:
+express.static() middleware ব্যবহার করে নির্দিষ্ট ডিরেক্টরি থেকে static ফাইল সার্ভ করা যায়। এটি request-এর মাধ্যমে আসা URL-র সাথে মিলিয়ে ফাইল খুঁজে বের করে এবং client-কে পাঠায়।
+
+1. Express.js-এ static files সার্ভ করতে express.static() middleware ব্যবহার করা হয়।
+2. একটি নির্দিষ্ট ডিরেক্টরি নির্ধারণ করে সেখানে static files রাখতে হয়।
+3. app.use(express.static('directory_name')) ব্যবহার করে static files সার্ভ করা হয়।
+4. আপনি একাধিক static directories যুক্ত করতে পারেন এবং server চালু করার মাধ্যমে static files সহজেই client-এ প্রদান করা যায়।
+
+### What is the lifecycle of Express Middleware and how does it work?
+
+১. Middleware Lifecycle:
+
+১.১. Request শুরু হওয়া:
+ক্লায়েন্ট (যেমন, ব্রাউজার) একটি HTTP request তৈরি করে এবং সার্ভারে পাঠায়। এই request-এর মধ্যে URL, HTTP method (GET, POST, etc.), headers, এবং body থাকতে পারে।
+১.২. Middleware Invocation:
+Express অ্যাপ্লিকেশন request গ্রহণ করার পর middleware function গুলোকে sequentially (একটির পর একটি) execute করে। middleware function সাধারণত app.use() বা route handler এর মাধ্যমে যুক্ত করা হয়।
+প্রতিটি middleware function নিম্নলিখিত তিনটি প্যারামিটার গ্রহণ করে:
+req: Request object
+res: Response object
+next: একটি ফাংশন, যা পরবর্তী middleware বা route handler-এ control পাঠায়।
+১.৩. Middleware Execution:
+Middleware function গুলো request-এ কিছু পরিবর্তন করতে পারে, যেমন:
+Logging: Request-র তথ্য log করা।
+Authentication: User authentication যাচাই করা।
+Data Parsing: Body parsing (যেমন JSON বা URL-encoded data) করা।
+Middleware-এ next() ফাংশন কল করা হলে পরবর্তী middleware বা route handler-এ control পাঠানো হয়।
+১.৪. Final Route Handler Execution:
+Middleware chain শেষ হলে, যদি next() কল করা হয় এবং কোনো response পাঠানো না হয়, তাহলে final route handler execute হয়। এই route handler response তৈরি করে এবং client-এ পাঠায়।
+১.৫. Response Sending:
+Route handler response পাঠানোর জন্য res.send(), res.json(), res.status(), ইত্যাদি ফাংশন ব্যবহার করে HTTP response তৈরি করে।
+১.৬. End of Request:
+Client response গ্রহণ করে এবং lifecycle শেষ হয়।
+
+২. Error Handling in Middleware:
+যদি কোনো middleware এ error ঘটে, তাহলে next(err) কল করা হয়। Express.js error handling middleware-এ control পাঠায়, যেখানে error-handling logic কার্যকর হয়।
+Error-handling middleware-এ চারটি প্যারামিটার থাকে: err, req, res, next।
+
+৩. Middleware Types:
+Express.js middleware বিভিন্ন ধরনের হতে পারে, যেমন:
+
+1. Application-level middleware: app.use() এবং app.METHOD() (যেমন app.get(), app.post()) মাধ্যমে ব্যবহার করা হয়।
+2. Router-level middleware: Router instance ব্যবহার করে middleware তৈরি করা হয়।
+3. Error-handling middleware: next(err) কল করার মাধ্যমে error handling করতে ব্যবহৃত হয়।
+4. Built-in middleware: Express.js এর built-in middleware যেমন express.json() এবং express.urlencoded()।
+
+Express Middleware-এর lifecycle মূলত request গ্রহণ করা, middleware execution, route handler execution, এবং response পাঠানোর প্রক্রিয়ার মাধ্যমে কাজ করে। Middleware এর কাজ হল request এবং response-এর মধ্যে বিভিন্ন ধরণের কার্য সম্পাদন করা, যেমন logging, authentication, data parsing, ইত্যাদি। Middleware এর জীবনে error handling এবং response return এরও গুরুত্ব রয়েছে।
+
+
+### How to create and use custom middleware in Express?
+
+Express.js-এ custom middleware তৈরি এবং ব্যবহার করা খুবই সহজ। Middleware হল এমন একটি ফাংশন যা request এবং response অবজেক্টের মধ্যে কাজ করে এবং অ্যাপ্লিকেশনের বিভিন্ন ধাপে কার্যকর হয়। Custom middleware তৈরি করে আপনি যেকোনো কাজ করতে পারেন, যেমন logging, authentication, data validation, ইত্যাদি।
+
+Custom Middleware তৈরি এবং ব্যবহারের ধাপসমূহ:
+১. Custom Middleware তৈরি:
+Custom middleware একটি ফাংশন হিসেবে তৈরি করা হয়, যেখানে তিনটি গুরুত্বপূর্ণ parameter থাকে:
+
+req: Request object
+res: Response object
+next: একটি ফাংশন, যা পরবর্তী middleware বা route handler-এ control পাঠানোর জন্য ব্যবহৃত হয়।
+
+২. Middleware function এর কার্যপদ্ধতি:
+Middleware ফাংশন সাধারণত তিনটি কাজ করে:
+
+Request এর মধ্যে কিছু প্রসেস করা (যেমন, logging, authentication)।
+Response পাঠানো (যদি middleware চায় response শেষ করতে)।
+পরবর্তী middleware বা route handler এ পাঠানো (next() ফাংশনের মাধ্যমে)।
+
+৩. Custom Middleware ব্যবহার করার উপায়:
+১. Application-level Middleware:
+app.use() অথবা সরাসরি app.get(), app.post() ইত্যাদির মধ্যে middleware ব্যবহার করা যেতে পারে।
+২. Route-specific Middleware:
+কেবলমাত্র নির্দিষ্ট route এর জন্য middleware ব্যবহার করতে পারেন।
+৩. Multiple middleware in a route:
+একটি route-এ একাধিক middleware ব্যবহার করা যেতে পারে। প্রতিটি middleware পরবর্তী middleware বা route handler-এ next() ফাংশন দ্বারা control পাস করবে।
+৪. Custom Middleware-এ Error Handling:
+Middleware-এ কোনো error থাকলে সেটি পরবর্তী error-handling middleware এ পাঠানো যায়। এর জন্য next(err) কল করতে হয়।
+৫. Middleware থেকে Response শেষ করা:
+Custom middleware থেকে response শেষ করতে চাইলে res.send(), res.json(), ইত্যাদি ব্যবহার করে response পাঠানো যেতে পারে। সেক্ষেত্রে next() কল করার প্রয়োজন নেই।
+
+
+Custom middleware হলো এমন ফাংশন যা request এবং response-এর মধ্যে কাজ করে।
+Custom middleware তৈরি করে বিভিন্ন কাজ করা যায়, যেমন logging, authentication, validation, ইত্যাদি।
+Middleware function এ req, res এবং next() প্যারামিটার থাকে, এবং next() ফাংশন পরবর্তী middleware বা route handler-এ control পাস করতে ব্যবহৃত হয়।
+Middleware অ্যাপ্লিকেশন-লেভেল, route-specific, এবং multiple middleware এর জন্য ব্যবহার করা যেতে পারে।
+
+### How is JSON and URL encoded body parsing done in Express?
+
+Express.js-এ JSON এবং URL-encoded body parsing সাধারণত request body-র ডেটা ক্লায়েন্ট থেকে সার্ভারে পাঠানোর জন্য ব্যবহৃত হয়। Express.js-এ এই ডেটা parsing করার জন্য built-in middleware রয়েছে, যা request body থেকে ডেটা extract করে এবং সহজে অ্যাক্সেসযোগ্য করে তোলে।
+
+১. JSON body parsing:
+JSON format-এ ডেটা পাঠানোর সময়, ডেটা Content-Type: application/json হিসেবে পাঠানো হয়। Express.js-এ JSON data parsing করার জন্য express.json() middleware ব্যবহার করা হয়। এটি JSON ফর্ম্যাটে পাঠানো ডেটা request body থেকে extract করে এবং req.body অবজেক্টের মধ্যে রাখে।
+
+Explanation: express.json() middleware-এর মাধ্যমে JSON ফর্ম্যাটে পাঠানো ডেটা req.body-তে পাওয়া যাবে। এটি সাধারণত API-এর POST, PUT, PATCH এর মতো request-এর ক্ষেত্রে ব্যবহৃত হয়, যেখানে ডেটা ক্লায়েন্ট থেকে সার্ভারে পাঠানো হয়।
+
+২. URL-encoded body parsing:
+URL-encoded ডেটা সাধারণত HTML form-এর মাধ্যমে পাঠানো হয় এবং ডেটা application/x-www-form-urlencoded ফর্ম্যাটে থাকে। Express.js-এ URL-encoded ডেটা parsing করার জন্য express.urlencoded() middleware ব্যবহার করা হয়।
+
+Explanation: express.urlencoded({ extended: true }) middleware form ডেটা req.body-তে পাস করে।
+extended: true মানে qs লাইব্রেরি ব্যবহার করে nested object parsing করা যাবে।
+extended: false হলে querystring লাইব্রেরি ব্যবহার করা হয়, যা কিছুটা কম জটিল ডেটা handle করে।
+
+৩. একসাথে JSON এবং URL-encoded parsing:
+অনেক সময় অ্যাপ্লিকেশনে উভয় ধরণের body (JSON এবং URL-encoded) parsing এর প্রয়োজন হতে পারে। এই ক্ষেত্রে, উভয় middleware ব্যবহার করা যেতে পারে।
+এই উদাহরণে, অ্যাপটি উভয় ধরনের ডেটা (JSON এবং URL-encoded) গ্রহণ করতে পারবে এবং সেগুলো req.body এর মাধ্যমে এক্সেস করা যাবে।
+
+সারসংক্ষেপ:
+JSON body parsing করা হয় express.json() middleware এর মাধ্যমে, যেখানে JSON ফর্ম্যাটের ডেটা req.body-তে পাওয়া যায়।
+URL-encoded body parsing করা হয় express.urlencoded() middleware দিয়ে, যেখানে form data URL-encoded ফর্ম্যাটে পাঠানো হয়।
+উভয় parsing একই সাথে করতে হলে express.json() এবং express.urlencoded() একসাথে ব্যবহার করা যেতে পারে।
+
+
+### Explain token based authentication?
+
+Token-based authentication একটি নিরাপত্তা প্রক্রিয়া, যেখানে একটি token ব্যবহার করে user authentication সম্পন্ন করা হয়। এটি সাধারণত APIs, web applications, এবং mobile apps-এ user authentication-এর জন্য ব্যবহৃত হয়। নিচে এর বিভিন্ন দিক তুলে ধরা হলো:
+
+১. Token কী?
+Token হলো একটি unique string, যা user এর credentials (যেমন username, password) যাচাইয়ের পরে তৈরি করা হয়। এটি সাধারণত একটি encoded বা encrypted string হয়, যা একটি session-এর সময়কালের জন্য বৈধ থাকে। টোকেনটি server-side data store করার পরিবর্তে client-side এ সংরক্ষণ করা হয়।
+
+২. Token-based authentication-এর ধাপগুলো:
+User login: প্রথমে user তার credentials (যেমন username এবং password) দিয়ে login করে। এই credentials server-এর সাথে মেলানো হয়।
+
+Token creation: যদি credentials সঠিক হয়, server একটি token তৈরি করে, যা সাধারণত একটি JWT (JSON Web Token) হয়। এই token user-এর authentication এবং authorization data ধারণ করে, এবং এটি সাধারণত signed বা encrypted করা থাকে।
+
+Token প্রদান: Tokenটি user-কে response হিসাবে পাঠানো হয়। Client (যেমন, browser, mobile app) এই token টি সাধারণত localStorage, sessionStorage বা cookie-তে সংরক্ষণ করে।
+
+Token সহ অনুরোধ: যখন user কোনো resource access করতে চায় (যেমন API endpoint), তখন এই token কে request header (সাধারণত Authorization header) এ যুক্ত করে server-এ পাঠানো হয়। উদাহরণস্বরূপ, একটি HTTP request এই রকম হতে পারে:
+
+Token validation: Server token গ্রহণ করার পর সেটি যাচাই করে দেখে যে এটি বৈধ এবং মেয়াদউত্তীর্ণ নয়। যদি token বৈধ হয়, তাহলে user কে resource access করার অনুমতি দেওয়া হয়।
+
+Token expiry: Token-এর একটি নির্দিষ্ট সময় পর্যন্ত বৈধতা থাকে। যদি token-এর মেয়াদ শেষ হয়ে যায়, তাহলে user-কে পুনরায় লগইন করতে হয় এবং নতুন token সংগ্রহ করতে হয়।
+
+৩. JWT (JSON Web Token) কী?
+Token-based authentication-এ বেশিরভাগ সময় JWT ব্যবহার করা হয়। এটি তিনটি অংশ নিয়ে গঠিত:
+
+Header: Token এর ধরণ এবং signature algorithm নির্দেশ করে।
+Payload: User সম্পর্কিত তথ্য (যেমন user ID, role) ধারণ করে।
+Signature: Token টি পরিবর্তিত হয়েছে কিনা তা যাচাই করতে ব্যবহৃত হয়।
+
+সারসংক্ষেপ:
+Token-based authentication হলো একটি নিরাপত্তা প্রক্রিয়া, যেখানে server user কে একটি token প্রদান করে এবং এই token ব্যবহার করে user পুনরায় তাদের identity প্রমাণ করে। এটি stateless, cross-platform compatible, এবং অনেক বেশি secure authentication ব্যবস্থা হিসেবে ব্যবহৃত হয়।
+
+
+
+### What are the uses of the Next function?
+
+next ফাংশনটি Express.js-এ middleware এর একটি গুরুত্বপূর্ণ অংশ, যা একটি middleware ফাংশন থেকে পরবর্তী middleware বা route handler-এ control পাস করার জন্য ব্যবহৃত হয়। নিচে next ফাংশনের কিছু গুরুত্বপূর্ণ ব্যবহার উল্লেখ করা হলো:
+
+১. পরবর্তী middleware-এ control পাঠানো:
+যখন একটি middleware তার কাজ শেষ করে, তখন এটি next() ফাংশন কল করে পরবর্তী middleware বা route handler-এ control পাস করে। যদি next() কল না করা হয়, তাহলে request hang করবে এবং response পাঠানো হবে না।
+
+উদাহরণ:
+app.use((req, res, next) => {
+  console.log('Request received');
+  next(); // পরবর্তী middleware-এ পাঠানো
+});
+
+২. Error handling middleware তে control পাঠানো:
+next ফাংশনের মধ্যে কোনো error পাস করলে, Express.js সেই error এর জন্য নির্ধারিত error handling middleware-এ control পাস করে। এটি মূলত অ্যাপ্লিকেশনে error catching এবং handling করার জন্য ব্যবহার করা হয়।
+
+উদাহরণ:
+app.use((req, res, next) => {
+  const err = new Error('Something went wrong');
+  next(err); // error handling middleware-এ পাঠানো
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  res.status(500).send(err.message);
+});
+
+৩. Request lifecycle management:
+Express.js-এ middleware-গুলো একটি চেইনের মতো কাজ করে। প্রতিটি middleware একটি নির্দিষ্ট কাজ করে এবং তারপর next() এর মাধ্যমে পরবর্তী middleware বা final route handler-এ control দেয়। এটি request lifecycle-এর একটি গুরুত্বপূর্ণ অংশ।
+
+উদাহরণ:
+app.use((req, res, next) => {
+  req.user = 'Nur Muhammad'; // request object-এ কিছু যোগ করা
+  next(); // পরবর্তী middleware-এ পাঠানো
+});
+
+app.get('/', (req, res) => {
+  res.send(`Hello, ${req.user}`);
+});
+
+৪. Skipping middleware:
+কখনো কখনো শর্ত অনুসারে middleware এড়িয়ে যেতে হয়। next('route') কল করলে, Express.js সরাসরি পরবর্তী route handler-এ চলে যাবে, যেটি একই URL pattern-এর সাথে মিলে যায়।
+
+সারসংক্ষেপ:
+পরবর্তী middleware বা route handler-এ control পাঠানোর জন্য next() ব্যবহার করা হয়।
+Error handling এর জন্য next(error) কল করা হয়।
+next('route') দিয়ে নির্দিষ্ট route skip করা যায়।
+Asynchronous middleware-এর ক্ষেত্রে next() ব্যবহার করে পরবর্তী ফেজে পাঠানো হয়।
+next() ফাংশন Express.js-এর request-response সাইকেলের একটি গুরুত্বপূর্ণ অংশ, যা অ্যাপ্লিকেশনের বিভিন্ন middleware এর মধ্যে যোগাযোগ স্থাপন করে।
+
+
+### What are the differences between app.route() and app.use()?
+
+app.route() এবং app.use() Express.js-এর দুটি ভিন্ন ফাংশন, যেগুলো বিভিন্ন উদ্দেশ্যে ব্যবহার করা হয়। নিচে তাদের পার্থক্যগুলো তুলে ধরা হলো:
+
+১. ব্যবহার (Usage):
+app.route(): app.route() একই route-এর জন্য বিভিন্ন HTTP method (GET, POST, PUT, DELETE ইত্যাদি) চেইন করার একটি shorthand। 
+app.use(): app.use() একটি middleware যুক্ত করার জন্য ব্যবহৃত হয়, যা নির্দিষ্ট route বা পুরো অ্যাপ্লিকেশন জুড়ে কাজ করতে পারে। 
+
+app.route(): সাধারণত route-specific operations এবং নির্দিষ্ট URL এবং HTTP method-এর জন্য ব্যবহৃত হয়। অর্থাৎ, এটি নির্দিষ্ট একটি URL এ GET, POST ইত্যাদি HTTP requests handle করে।
+app.use(): এটি middleware হিসেবে কাজ করে এবং যেকোনো ধরনের request এর আগে কার্যকর হয়| এটি যেকোনো URL pattern-এ কাজ করতে পারে এবং সব HTTP method-এ কার্যকর হয়। এটি সাধারণত logging, authentication, authorization, ইত্যাদি করতে ব্যবহৃত হয়।
+
+সারসংক্ষেপ:
+app.route() একই route-এর বিভিন্ন HTTP method পরিচালনা করতে ব্যবহৃত হয়।
+app.use() middleware-এর মতো কাজ করে এবং request object-এর উপর বিভিন্ন পরিবর্তন পরিচালনা করে যেকোনো URL বা HTTP method-এর জন্য।
+
+### What are the characteristics of global error handlers?
+
+Global error handler-এর বৈশিষ্ট্যগুলো নিম্নরূপ:
+
+১. centrally error handling করা যায়:
+একটি global error handler অ্যাপ্লিকেশনের যেকোনো জায়গা থেকে ঘটে যাওয়া error-গুলো centrally manage করতে পারে। অর্থাৎ, বিভিন্ন জায়গায় error handling কোড না লিখে একটি central জায়গা থেকে error manage করা হয়।
+
+2. Error status code এবং response পাঠানোর ক্ষমতা:
+Global error handler সাধারণত উপযুক্ত HTTP status code (যেমন 400, 500) এবং error message response হিসাবে পাঠাতে পারে। ফলে client সহজেই বুঝতে পারে যে কী ধরণের error ঘটেছে।
+
+সারসংক্ষেপ:
+Global error handler একটি centralized system যা পুরো অ্যাপ্লিকেশনের error management সহজ করে তোলে, error log করার সুবিধা দেয়, এবং উপযুক্ত HTTP status code ও response পাঠায়। এটি asynchronous errors এবং নিরাপত্তার দিকেও লক্ষ্য রাখে।
+
+
+### How to do Cross-Origin Resource Sharing in express.js?
+
+Express.js-এ Cross-Origin Resource Sharing (CORS) করার জন্য আপনি cors নামের একটি middleware ব্যবহার করতে পারেন। এটি আপনার API-কে বিভিন্ন origin থেকে আসা অনুরোধ গ্রহণ করার সুযোগ দেয়। নিচে এর জন্য একটি সাধারণ উদাহরণ দেওয়া হলো:
+
+প্রথমে, আপনাকে cors প্যাকেজটি ইনস্টল করতে হবে:
+app.use(cors()) দ্বারা আপনার সকল রিকোয়েস্টের জন্য CORS সক্রিয় হবে।
+
+যদি আপনি নির্দিষ্ট origin-এর জন্য CORS করতে চান:
+আপনি নির্দিষ্ট কিছু origin থেকে রিকোয়েস্ট গ্রহণ করতে পারেন
+
+
+সারসংক্ষেপ:
+CORS হলো এমন একটি নিরাপত্তা ব্যবস্থা যা ব্রাউজার বিভিন্ন origin থেকে অনুরোধ পাঠানোর সময় কার্যকর করে। Express.js-এ CORS সক্রিয় করতে cors middleware ব্যবহার করা হয়, যা পুরো অ্যাপ বা নির্দিষ্ট কিছু route-এর জন্য নির্দিষ্ট করা যায়।
