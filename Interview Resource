@@ -1,0 +1,206 @@
+জাভাস্ক্রিপ্ট
+---------
+জাভাস্ক্রিপ্ট সিংগেল থ্রেটেড না মাল্টিথ্রেটেড? ✅
+জাভাস্ক্রিপ্ট এর সাথে ব্যাকেন্ডে কেন নোড ইউস  করব, অন্যগুলা কেন নয়?
+Difference between cluster and child process model
+Call, bind, apply সম্পর্কে বলো ✅
+This বলতে কি বুজি, কাজ কি এটার ✅
+Callback and return এর পার্থক্য কি, দুইটা কাজ এক না আলাদা।
+Higher order  Function কী ✅
+Event loop and Event queue different কি?
+What is Data Type in javaScript ✅
+Undefine and Define variable কি?
+Default parameters কি কেন ব্যাবহার করা হয়
+“==” এবং “===” মধ্যে পার্থক্য আছে কিনা ✅
+Javascript scope, Block scope and global scope, Lexical scope এর পার্থক্য
+Var let const মধ্যে সম্পর্ক এবং পার্থক্য কি? ✅
+Is Javascript Synchronous or asynchronous? How does it work?
+Ref. Type and preemptive type diff.
+Es6 advance topic বলো, কোনগুলা ব্যাবহার করছো?
+Prototype chain বলতে কি বুজো
+Pseudocode  Method chaining নিয়ে কাজ করা হয় না।
+How many arguments does call apply bind take? ✅
+Event bubbling in js ✅ 
+Call by value vs call by reference 
+Js hosting, How many hosting in js 
+Function and recursive function কাকে বলে
+How Spread operator work  ✅
+Closure, How closure work ✅
+Inheritance of javascript
+একটা ফাংশনকে কখন রিটার্ন করতে হয়?
+Have any idea of Object orientate. 
+After writing a js code how it will run in the browser step by step procedure
+How to work push and pop method.
+array vs linked list সম্পর্কে ধারনা আছে কিনা? দুটার মধ্য সম্পর্ক বা পার্থক্য কি?
+class vs object মধ্যে সম্পর্ক কি?
+object oriented programming vs functional programming, principles of object-oriented programming
+Why JavaScript faster even single thread
+Explain Method chaining.
+
+
+রিয়েক্টঃ
+useState কেন ইউস করি, এটার কাজ কি?
+Chilld থেকে Parents  এ ডাটা পাস করা যায় কিনা?
+Parant থেকে ৪-৫ নিচের চাইল্ড ডাটা পাস করার বেস্ট ওয়ে কোনটা?
+রিয়েক্ট এর সাথ Mongodb কেন ইউস করা হয়ছে MySql কেন নয়?
+What is reactjs
+Reactjs disadvantage.
+What is Redux and uses?
+React native সম্পর্কে কি জানো বলো
+Higher order components কি? বাস্তব উদাহার দাও।
+UseEffect and useState কি return করে
+React lifecycle সম্পর্কে বলো
+Props and state কীভাবে কাজ করে
+রিয়েক্ট আমরা কেন ব্যাবহার করব
+রিয়েক্ট অপ্টমাইজ কীভাবে করে
+রিয়েক্ট এর স্টেড ম্যানেজমেন্ট জিনিস্টা কি
+Jsx কীভাবে কাজ করে.
+Redux -flax কি?
+Virtual dom and real dom এর পার্থক্য কি?
+UseEfect এর ডিপেন্ডেন্সি কেন ইউস করা হয়
+What is context API? How does it work?
+Props drailng কি?
+React native এর Elementor and component নিয়ে কাজ করছে কিনা
+React re-render কীভাবে ঠেকানো যায়
+useHistory কেন ইউস করা হয়?
+
+
+
+নোড ও মঙ্গডিবিঃ
+What is Nodejs
+Nodejs single threaded or multi threaded
+database and data structure এর মধ্যে পার্থক্য কি?
+how to implement stack
+sql vs mysql মধ্যে পার্থক্য কি? কোনটা বেশি ব্যবহার হয়
+dbms, polymorphism,
+Database design বলতে কি বুজো?
+Post method এর জায়গায় get method দিলে express কি এরর দিবে? 
+সার্ভার সাইট ক্রাস করলে কি করবেন?
+API কিভাবে কাজ করে
+database r data structure মধ্যে পার্থক্য কি?
+ NodeJs stream কী
+What are node js timing features?
+NodeJs ব্লকিং না নন-ব্লকিং কাজ করে
+Mongoose কি? কীভাবে কাজ করে? এটা নিয়ে কাজ করছে কিনা 
+PUT and Patch এর মধ্যে পার্থক্য কি?.
+MongoDB ক্লাস্টার কি? কীভাবে কাজ করে?
+
+
+প্রব্লেম সলভিং
+Const arr  = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13]; 
+How to remove duplicate elements from this array?
+How to find out the largest/lowest elements from this array?
+How to slice(22, 48) from this array
+How to get date,month,year from new date()
+Is it truthy or falsy value, let number = "false";
+Mongodb must be connected...., topology closed, unhandled rejection
+Uncaught TypeError: Cannot read property 'value' of undefined
+TypeError: map is not a function
+How to call an API in a rest country?/json Placeholder
+Firebase: Error (Auth/configuration-not-found)
+
+
+
+JavaScript এবং ECMAScript এর মধ্যে কি পার্থক্য এবং কিভাবে তারা সম্পর্কিত?
+Closure কি এবং কিভাবে Lexical Scope-এর সাথে সম্পর্কিত?
+Callback Functions কি, এবং JavaScript-এ Asynchronous Programming এর ভূমিকা কি?
+JavaScript এবং ECMAScript-6 এর মধ্যে var, let, এবং const এর মধ্যে কি পার্থক্য এবং কীভাবে তাদের ব্যবহার করা হয়?
+Promise কি, এবং Fetch API কিভাবে একটি HTTP রিকোয়েস্ট বা একটি এসিঙ্ক্রোনাস অপারেশন সম্পাদন করে?
+ Arrow Functions কি, এবং এটি কেন ব্যবহার করা হয়? এর বৈশিষ্ট্য কি?
+JavaScript-এ Prototype Chain কি এবং ইনহেরিট্যান্সের সাথে সম্পর্ক কি?
+Strict Mode কি এবং কীভাবে এটি ব্যবহার করা হয়? এর কোন উপকারিতা রয়েছে?
+JavaScript Event Loop কি এবং কিভাবে এটি Concurrency Model এর সাথে সম্পর্কিত?
+Hoisting কি এবং Temporal Dead Zone কি? এটি কিভাবে কাজ করে?
+Async/Await কি, এবং এটি Promises-এর সাথে কিভাবে সম্পর্কিত?
+JavaScript-এ কি কি ডাটা টাইপ রয়েছে এবং তাদের বৈশিষ্ট্য কি?
+JavaScript-এ this keyword কী এবং এটি কিভাবে ব্যবহৃত হয়?
+JavaScript-এ Web APIs কি এবং কিভাবে DOM Manipulation করা হয়?
+JavaScript এর মডিউল সিস্টেম কি, এবং ECMAScript-6 এর Modules কিভাবে কাজ করে?
+
+
+
+
+Javascript দিয়েই তো আমরা সকল কাজ করতে পারি, তাহলে typescript ইউজ করার কারন কি?
+Generics কি, কিভাবে কাজ করে?
+Getter, Setter কি, কিভাবে কাজ করে?
+Class এ super কিওয়ার্ড এর কাজ কি?
+ধরুন আমি কোন Interface এর সকল প্রোপার্টি অপশনাল করতে চাচ্ছি, তাহলে কি করবো?
+Type Assertion এবং Type Casting এর মধ্যে কি পার্থক্য রয়েছে?
+TypeScript-এ Declaration Merging কি? এটি কীভাবে কাজ করে?
+Union এবং Intersection Types কি? এটি কিভাবে ব্যবহার করা হয়?
+TypeScript প্রজেক্টে কেন এবং কিভাবে tsconfig.json ফাইল ব্যবহার করা হয়?
+React ডেভেলপমেন্টে TypeScript কীভাবে ব্যবহার করা হয় এবং এর পোজিটিভ এবং নেগেটিভ দিক কি?
+
+
+
+
+
+Javascript
+JavaScript এবং ECMAScript এর মধ্যে কি পার্থক্য এবং কিভাবে তারা সম্পর্কিত?
+Closure কি এবং কিভাবে Lexical Scope-এর সাথে সম্পর্কিত?
+Callback Functions কি, এবং JavaScript-এ Asynchronous Programming এর ভূমিকা কি?
+JavaScript এবং ECMAScript-6 এর মধ্যে `var`, `let`, এবং `const` এর মধ্যে কি পার্থক্য এবং কীভাবে তাদের ব্যবহার করা হয়?
+Promise কি, এবং Fetch API কিভাবে একটি HTTP রিকোয়েস্ট বা একটি এসিঙ্ক্রোনাস অপারেশন সম্পাদন করে?
+ Arrow Functions কি, এবং এটি কেন ব্যবহার করা হয়? এর বৈশিষ্ট্য কি?
+JavaScript-এ Prototype Chain কি এবং ইনহেরিট্যান্সের সাথে সম্পর্ক কি?
+Strict Mode কি এবং কীভাবে এটি ব্যবহার করা হয়? এর কোন উপকারিতা রয়েছে?
+JavaScript Event Loop কি এবং কিভাবে এটি Concurrency Model এর সাথে সম্পর্কিত?
+Hoisting কি এবং Temporal Dead Zone কি? এটি কিভাবে কাজ করে?
+Async/Await কি, এবং এটি Promises-এর সাথে কিভাবে সম্পর্কিত?
+JavaScript-এ কি কি ডাটা টাইপ রয়েছে এবং তাদের বৈশিষ্ট্য কি?
+JavaScript-এ this keyword কী এবং এটি কিভাবে ব্যবহৃত হয়?
+JavaScript-এ Web APIs কি এবং কিভাবে DOM Manipulation করা হয়?
+JavaScript এর মডিউল সিস্টেম কি, এবং ECMAScript-6 এর Modules কিভাবে কাজ করে?
+
+Typescript 
+Javascript দিয়েই তো আমরা সকল কাজ করতে পারি, তাহলে typescript ইউজ করার কারন কি?
+Generics কি, কিভাবে কাজ করে?
+Getter, Setter কি, কিভাবে কাজ করে?
+Class এ super কিওয়ার্ড এর কাজ কি?
+ধরুন আমি কোন Interface এর সকল প্রোপার্টি অপশনাল করতে চাচ্ছি, তাহলে কি করবো?
+Type Assertion এবং Type Casting এর মধ্যে কি পার্থক্য রয়েছে?
+TypeScript-এ Declaration Merging কি? এটি কীভাবে কাজ করে?
+Union এবং Intersection Types কি? এটি কিভাবে ব্যবহার করা হয়?
+TypeScript প্রজেক্টে কেন এবং কিভাবে tsconfig.json ফাইল ব্যবহার করা হয়?
+React ডেভেলপমেন্টে TypeScript কীভাবে ব্যবহার করা হয় এবং এর পোজিটিভ এবং নেগেটিভ দিক কি?
+
+Node
+Node.js এবং Non-blocking I/O এর মধ্যে কি পার্থক্য এবং এটি কেন মহত্বপূর্ণ?
+Node.js Event Loop কি, এটি কিভাবে কাজ করে এবং এর কি মূল অংশগুলি কি?
+npm এবং yarn এর মধ্যে কি পার্থক্য এবং কোনটি কোথায় ব্যবহার করা উচিৎ?
+Node.js Single-threaded হয়েও এটি কিভাবে মাল্টিপল টাস্ক হ্যান্ডেল করে?
+Node.js এবং Asynchronous Programming কি এবং এটি কীভাবে একটি নোন-ব্লকিং ইউজার ইন্টারফেস তৈরি করে?
+Node.js Streams কি, এটি কিভাবে কাজ করে?
+Node.js Middleware কি, এটি কীভাবে কাজ করে এবং কেন এটি প্রয়োজন?
+Node.js EventEmitter কি, এটি কিভাবে ব্যবহার করা হয় এবং এর কি গুরুত্বপূর্ণ বৈশিষ্ট্যগুলি রয়েছে?
+Node.js কেন মাইক্রোসার্ভিস আর্কিটেকচারে ব্যবহার হয় এবং এর কী উপকারিতা?
+Node.js এবং WebSocket কি, এটি কিভাবে কাজ করে এবং রিয়েল-টাইম এপ্লিকেশনে কেন ব্যবহার করা হয়?
+
+Express
+এক্সপ্রেসে Cross-Origin Resource Sharing কিভাবে করতে পারি?
+গ্লোবাল এরর হ্যান্ডেলারের বৈশিষ্ট্য গুলো কিকি?
+app.route() and app.use() এর মধ্যে পার্থক্য কি?
+Next function কি কি কাজে ব্যবহার করা হয়?
+মিডলওয়ার ব্যবহার এর সুবিধা ও অসুবিধা কি কি?
+Express-এ Request এবং Response এর মধ্যে পার্থক্য কি, কি কাজ করা যায়?
+Express-এ কিভাবে JSON ও URL Encoded বডি পার্সিং করা হয়?
+Express-এ কিভাবে কাস্টম মিডলওয়ার তৈরি করা হয় এবং ব্যবহার করা হয়?
+Express Middleware-এর লাইফসাইক্ল কি এবং এটি কোনভাবে কাজ করে?
+ Express-এ স্ট্যাটিক ফাইলগুলি কিভাবে সার্ভ করা হয়?
+ Express-এ কোনও প্রজেক্টের কনফিগারেশন করার জন্য কী ধরণের কাজ করতে হয়?
+ Http মেথড কয়টি এবং কি কি?
+Mongoose
+Transaction and rollback কি? এটা ব্যভারের উপকারিতা কি?
+unique , required বাদে স্কিমাতে আমরা আর কি কি বিল্ট ইন ভেলিদেশন করা যায়?
+ধরুন আমি স্কিমাতে কিছু কাস্টম ভ্যালিডেশন করতে চাচ্ছি, এটা কিভাবে করতে পারি?
+$addToSet and $push কি কাজ করে? কোনটা কখন ইউজ করবো?
+Populate and $lookup দুইটার মধ্যে পার্থক্য? কোনটা কোথায় ব্যবহার করা হয়?
+স্ট্যাটিক এবং ইন্সট্যান্স মেথডের মধ্যে পার্থক্য কি?
+Mongodb তো আমরা ফ্লেক্সিবল ভাবে unstructured data স্টোর করতে পারি, তাহলে mongoose ইউজ করে ডাটার structure দেয়ার দরকার টা কি?
+Mongoose-এ Lean Queries কি এবং এটি কীভাবে ব্যবহার করা হয়?
+Mongoose-এ Middleware কি, এবং কিভাবে pre এবং post middleware ব্যবহার করা হয়?
+Mongoose-এ Indexing কি এবং এর কিভাবে এবং কেন প্রয়োজনীয়?
+
+
+
+

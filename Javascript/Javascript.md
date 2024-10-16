@@ -1,6 +1,6 @@
 ### 1. Is Javascript Single Threaded?
 
-Ans: Yes, Javascript is a Single Threaded Language. Because It has Only One Call Stack and one heap memory.
+Yes, Javascript is a Single Threaded Language. Because It has Only One Call Stack and one heap memory.
 
 Javascript is Synchronous and Blocking Nature. Its Meaning that code is executed line by line and one task must be completed before the next one begins.
 
@@ -35,7 +35,9 @@ The Event loop permanently monitors whether the call stack is empty. If the call
 ### 4. Difference between var, let, and const?
 
 var: Function-scoped, can be re-declared and updated, hoisted with undefined initialization.
+
 let: Block-scoped, cannot be re-declared but can be updated, hoisted without initialization.
+
 const: Block-scoped, cannot be re-declared or updated, hoisted without initialization.
 
 Variables declared with var globally are attached to the window object. Type var dog = ‘browser’ in the browser’s console and then type window.dog. The value ‘browser’ appears!. let and const are not attached to the window object.
@@ -1133,21 +1135,12 @@ Use Cases: Data privacy, maintaining state, callbacks, and currying are common s
 Closures are a powerful feature that enables more functional and modular code in JavaScript.
 
 
-
-
-
-
-
-
-
 ================================================================================================================================================================================
 
 h5bq, frontendInterviewHandbook, Top 30 Interview Questions, Sudheeraj Interview, Fireship, aksay Saini
 ```
 
-==================================================================================================================================================
-
-==================================================================================================================================================================================
+================================================================================================================================================================================
 
 1. Hoisting in JavaScript:
 

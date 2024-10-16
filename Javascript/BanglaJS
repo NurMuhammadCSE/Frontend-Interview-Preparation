@@ -19,3 +19,15 @@ div.addEventListener('click', function(event) {
 }, {capture: true});
 
 এভাবে capturing mode এ ইভেন্ট হ্যান্ডেল করা হয়। ইভেন্ট bubbling ও capturing দুইটি পদ্ধতিই DOM ইভেন্ট হ্যান্ডলিং এর ক্ষেত্রে ব্যবহৃত হয়, যা ইভেন্ট কীভাবে propagate হবে তা নির্ধারণ করে।
+
+
+Single Threaded
+Javascript Enigine
+Event Loop 
+var let const
+Data Types
+Callback Function 
+Promise & Chaining
+== vs ===
+Create Object
+rest & spread
