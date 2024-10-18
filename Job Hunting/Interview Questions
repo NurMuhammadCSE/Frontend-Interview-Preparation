@@ -1,0 +1,61 @@
+*আপনাদের হোম টাস্ক - *
+1. এশিয়া থেকে ৫ টি জব এপলাই 
+2. নর্থ আমেরিকা এবং ইউরোপ থেকে ১০ টি জব এপলাই 
+
+*ইন্টারভিউ এর প্রশ্ন :*
+১. JavaScript এবং ECMAScript এর মধ্যে কি পার্থক্য এবং কিভাবে তারা সম্পর্কিত?
+২. Closure কি এবং কিভাবে Lexical Scope-এর সাথে সম্পর্কিত?
+৩. Callback Functions কি, এবং JavaScript-এ Asynchronous Programming এর ভূমিকা কি?
+৪. JavaScript এবং ECMAScript-6 এর মধ্যে var, let, এবং const এর মধ্যে কি পার্থক্য এবং কীভাবে তাদের ব্যবহার করা হয়?
+৫. Promise কি, এবং Fetch API কিভাবে একটি HTTP রিকোয়েস্ট বা একটি এসিঙ্ক্রোনাস অপারেশন সম্পাদন করে?
+৬. Arrow Functions কি, এবং এটি কেন ব্যবহার করা হয়? এর বৈশিষ্ট্য কি?
+৭. JavaScript-এ Prototype Chain কি এবং ইনহেরিট্যান্সের সাথে সম্পর্ক কি?
+৮. Strict Mode কি এবং কীভাবে এটি ব্যবহার করা হয়? এর কোন উপকারিতা রয়েছে?
+৯. JavaScript Event Loop কি এবং কিভাবে এটি Concurrency Model এর সাথে সম্পর্কিত?
+১০. Hoisting কি এবং Temporal Dead Zone কি? এটি কিভাবে কাজ করে?
+
+
+প্রব্লেম সলভিং :
+https://docs.google.com/document/d/1ZfQD5sMnCnZXh1FgOchJok7W7ADAc1W9wEupfc8WuRU/edit?usp=sharing
+
+Problem Solving L02.01.001
+Node
+Node.js এবং Non-blocking I/O এর মধ্যে কি পার্থক্য এবং এটি কেন মহত্বপূর্ণ?
+Node.js Event Loop কি, এটি কিভাবে কাজ করে এবং এর কি মূল অংশগুলি কি?
+npm এবং yarn এর মধ্যে কি পার্থক্য এবং কোনটি কোথায় ব্যবহার করা উচিৎ?
+Node.js Single-threaded হয়েও এটি কিভাবে মাল্টিপল টাস্ক হ্যান্ডেল করে?
+Node.js এবং Asynchronous Programming কি এবং এটি কীভাবে একটি নোন-ব্লকিং ইউজার ইন্টারফেস তৈরি করে?
+Node.js Streams কি, এটি কিভাবে কাজ করে?
+Node.js Middleware কি, এটি কীভাবে কাজ করে এবং কেন এটি প্রয়োজন?
+Node.js EventEmitter কি, এটি কিভাবে ব্যবহার করা হয় এবং এর কি গুরুত্বপূর্ণ বৈশিষ্ট্যগুলি রয়েছে?
+Node.js কেন মাইক্রোসার্ভিস আর্কিটেকচারে ব্যবহার হয় এবং এর কী উপকারিতা?
+Node.js এবং WebSocket কি, এটি কিভাবে কাজ করে এবং রিয়েল-টাইম এপ্লিকেশনে কেন ব্যবহার করা হয়?
+
+
+1. Job Apply : Total 20
+Saturday - 10 Jobs apply only for Asian countries 
+Sunday - 10 Jobs apply only for Bangladesh, India & European countries. 
+2. Interview preparation:
+
+Interpersonal Question:
+Basic
+1. আপনার নিজের সম্পর্কে বলুন (Introduce yourself)
+2. আপনার সবচেয়ে বড় ও শক্তিশালী গুণ কী কী? (What are your biggest strengths?)
+3. আপনার দুর্বল দিকগুলো কী কী? (What are your weaknesses?)
+4. আগামী পাঁচ/দশ বছর পর নিজেকে কোন জায়গায় দেখতে চান? (Where do you see yourself in the next 5/10 years?)
+5. কেন আমরা আপনাকে হায়ার করবো? (Why should we hire you?)
+6. আমাদের জন্য আপনার কোনো প্রশ্ন আছে? (Do you have any questions for us?)
+7. আপনার বেস্ট প্রজেক্ট সম্পর্কে কিছু বলুন। (Tell me about your best project )
+
+Advance
+1. কোনো চাপের মুহূর্ত কীভাবে সামলেছেন?
+2. আপনি কী জানেন আমাদের কোম্পানি সম্পর্কে?
+3. আপনার নেতৃত্বের গুণাবলী সম্পর্কে কিছু বলুন
+4. আপনি কি দলবদ্ধ কাজ করতে পারেন?
+5. গুরুত্বপূর্ণ সিদ্ধান্ত নেয়ার ক্ষেত্রে আপনি কতটুকু বিচক্ষণ?
+6. পরিবর্তনের সাথে মানিয়ে নেয়ার ক্ষমতা আপনার কতটুকু?
+7. আপনার সবচেয়ে বড় অর্জন কী?
+8. আপনি এতদিন কোনো চাকরিতে কর্মরত ছিলেন না কেন?
+9. আপনার ম্যানেজমেন্টের কৌশল সম্পর্কে কিছু বলুন
+
+3. LinkedIn এর ১ম  Article টি Portfolio তে পোস্ট করে ফেলুন।

@@ -1,0 +1,248 @@
+
+Tell me about yourself.
+Tell me about your strengths and weaknesses?
+What are the most important things you are looking for in your next role?
+Out of all the candidates, why should we hire you?
+Why do you want this job?
+What kind of work environment do you like best?
+Tell me about the toughest decision you had to make in yourself in the last six months.
+What can we expect from you in your first three months?
+Name three improvements  that you have made recently to improve yourself.
+Do you consider yourself successful?
+Tell me 5 interesting facts about you.
+Out of all the candidates, why should we hire you?
+
+
+Professor Heather Austin
+Tell Me About Yourself - A GOOD Answer To This Interview Question 
+
+
+JavaScript Job Interview Questions - Bangla
+https://www.youtube.com/watch?v=cdv4kM8MwsY&list=PLHiZ4m8vCp9NwCTJowt0HTCNRi5K6w4nv&index=1
+
+
+জাভাস্ক্রিপ্ট
+জাভাস্ক্রিপ্ট সিংগেল থ্রেটেড না মাল্টিথ্রেটেড?
+জাভাস্ক্রিপ্ট এর সাথে ব্যাকেন্ডে কেন নোড ইউস  করব, অন্যগুলা কেন নয়?
+Difference between cluster and child process model
+Call, bind, apply সম্পর্কে বলো
+This বলতে কি বুজি, কাজ কি এটার
+Callback and return এর পার্থক্য কি, দুইটা কাজ এক না আলাদা।
+Higher order  Function কী
+Event loop and Event queue different কি?
+What is Data Type in javaScript
+Undefine and Define variable কি?
+Default parameters কি কেন ব্যাবহার করা হয়
+“==” এবং “===” মধ্যে পার্থক্য আছে কিনা
+Javascript scope, Block scope and global scope, Lexical scope এর পার্থক্য
+Var let const মধ্যে সম্পর্ক এবং পার্থক্য কি?
+Is Javascript Synchronous or asynchronous? How does it work?
+Ref. Type and preemptive type diff.
+Es6 advance topic বলো, কোনগুলা ব্যাবহার করছো?
+Prototype chain বলতে কি বুজো
+Pseudocode  Method chaining নিয়ে কাজ করা হয় না।
+How many arguments does call apply bind take
+Event bubbling in js
+Call by value vs call by reference 
+Js hosting, How many hosting in js
+Function and recursive function কাকে বলে
+How Spread operator work 
+Closure, How closure work
+Inheritance of javascript
+একটা ফাংশনকে কখন রিটার্ন করতে হয়?
+Have any idea of  Object orientate. 
+After writing a js code how it will run in the browser step by step procedure
+How to work push and pop method.
+array vs link list সম্পর্কে ধারনা আছে কিনা? দুটার মধ্য সম্পর্ক বা পার্থক্য কি?
+class vs object মধ্যে সম্পর্ক কি?
+object oriented programming vs functional programming, principles of object-oriented programming
+Why JavaScript faster even single thread
+Explain Method chaining.
+রিয়েক্টঃ
+useState কেন ইউস করি, এটার কাজ কি?
+Chilld থেকে Parents  এ ডাটা পাস করা যায় কিনা?
+Parant থেকে ৪-৫ নিচের চাইল্ড ডাটা পাস করার বেস্ট ওয়ে কোনটা?
+রিয়েক্ট এর সাথ Mongodb কেন ইউস করা হয়ছে MySql কেন নয়?
+What is reactjs
+Reactjs disadvantage.
+What is Redux and uses?
+React native সম্পর্কে কি জানো বলো
+Higher order components কি? বাস্তব উদাহার দাও।
+UseEffect and useState কি return করে
+React lifecycle সম্পর্কে বলো
+Props and state কীভাবে কাজ করে
+রিয়েক্ট আমরা কেন ব্যাবহার করব
+রিয়েক্ট অপ্টমাইজ কীভাবে করে
+রিয়েক্ট এর স্টেড ম্যানেজমেন্ট জিনিস্টা কি
+Jsx কীভাবে কাজ করে.
+Redux -flax কি?
+Virtual dom and real dom এর পার্থক্য কি?
+UseEfect এর ডিপেন্ডেন্সি কেন ইউস করা হয়
+What is context API? How does it work?
+Props drailng কি?
+React native এর Elementor and component নিয়ে কাজ করছে কিনা
+React re-render কীভাবে ঠেকানো যায়
+useHistory কেন ইউস করা হয়?
+Abdullah Al Habib — 12/14/2023 7:13 PM
+নোড ও মঙ্গডিবিঃ
+What is Nodejs
+Nodejs single threaded or multi threaded
+database and data structure এর মধ্যে পার্থক্য কি?
+how to implement stack
+sql vs mysql মধ্যে পার্থক্য কি? কোনটা বেশি ব্যবহার হয়
+dbms, polymorphism,
+Database design বলতে কি বুজো?
+Post method এর জায়গায় get method দিলে express কি এরর দিবে? 
+সার্ভার সাইট ক্রাস করলে কি করবেন?
+API কিভাবে কাজ করে
+database r data structure মধ্যে পার্থক্য কি?
+ NodeJs stream কী
+What are node js timing features?
+NodeJs ব্লকিং না নন-ব্লকিং কাজ করে
+Mongoose কি? কীভাবে কাজ করে? এটা নিয়ে কাজ করছে কিনা 
+PUT and Patch এর মধ্যে পার্থক্য কি?.
+MongoDB ক্লাস্টার কি? কীভাবে কাজ করে?
+Abdullah Al Habib — 12/14/2023 7:29 PM
+প্রব্লেম সলভিং
+Const arr  = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13]; 
+How to remove duplicate elements from this array?
+How to find out the largest/lowest elements from this array?
+How to slice(22, 48) from this array
+How to get date,month,year from new date()
+Is it truthy or falsy value, let number = "false";
+Mongodb must be connected...., topology closed, unhandled rejection
+Uncaught TypeError: Cannot read property 'value' of undefined
+TypeError: map is not a function
+How to call an API in a rest country?/json Placeholder
+Firebase: Error (Auth/configuration-not-found)
+
+
+
+https://docs.google.com/document/d/1BXeq9zgeD6NHP-AxiAdp2yyLWbVrc1B9Ng_jSPNQRMw/edit#heading=h.cpnlquuwlb2
+
+
+Here are top 30 interview questions for mastering DOM -
+
+What is the DOM, and how does it relate to HTML?
+How can you access elements in the DOM using JavaScript?
+Explain the differences between getElementById, getElementsByClassName, and getElementsByTagName.
+What is the purpose of the querySelector method, and how does it differ from querySelectorAll?
+Explain the concept of event bubbling and how it impacts event handling in the DOM.
+How do you stop event propagation in the DOM?
+What is event delegation, and why is it useful in DOM manipulation?
+How can you dynamically create HTML elements using JavaScript?
+Explain the differences between the textContent and innerHTML properties.
+How can you modify CSS properties of an element in the DOM using JavaScript?
+Explain the purpose of the setAttribute and getAttribute methods in DOM manipulation.
+What is the difference between appendChild and insertBefore methods for adding elements to the DOM?
+How do you remove elements from the DOM using JavaScript?
+What is the purpose of the parentNode property in DOM manipulation?
+Explain how to clone an element in the DOM using JavaScript.
+How do you check if an element exists in the DOM using JavaScript?
+What is the purpose of the classList property, and how can you use it to manipulate classes?
+How do you add and remove classes from an element in the DOM?
+Explain the differences between classList.add, classList.remove, and classList.toggle.
+How can you traverse the DOM tree using JavaScript?
+What are data attributes (data-*), and how can you use them in DOM manipulation?
+Explain the purpose of the style property in DOM manipulation.
+How can you retrieve the dimensions (width and height) of an element in the DOM?
+What is the purpose of the offset properties (offsetWidth, offsetHeight, offsetLeft, offsetTop) in DOM manipulation?
+How do you handle form manipulation in the DOM using JavaScript?
+Explain the differences between innerText, textContent, and innerHTML.
+How do you detect if an element is hidden or visible in the DOM?
+What are the differences between the client and offset properties in DOM manipulation?
+How can you handle scroll events in the DOM using JavaScript?
+Explain the differences between createDocumentFragment and createElement in DOM manipulation.
+
+
+
+
+Here are top 40 Javascript questions that are frequently asked in Frontend interviews -
+
+𝟭-𝟭𝟬: 𝗕𝗮𝘀𝗶𝗰𝘀 𝗼𝗳 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁
+
+What is JavaScript?
+Explain the difference between let, const, and var.
+How does hoisting work in JavaScript?
+Describe the concept of closures.
+Explain the event loop in JavaScript.
+What is the difference between == and ===?
+How do you check the type of a variable in JavaScript?
+What is the use of the this keyword in JavaScript?
+Explain the difference between function declaration and function expression.
+How does the setTimeout function work?
+
+𝟭𝟭-𝟮𝟬: 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 𝗮𝗻𝗱 𝗦𝗰𝗼𝗽𝗲
+
+What is a callback function?
+Explain the concept of a pure function.
+Describe the differences between function.call, function.apply, and function.bind.
+What is the purpose of the arguments object in a function?
+How do you create a closure in JavaScript?
+What is the use of the bind method?
+What is the difference between a shallow copy and a deep copy?
+How does the call stack work in JavaScript?
+Explain the concept of function currying.
+How can you avoid callback hell in JavaScript?
+
+𝟮𝟭-𝟯𝟬: 𝗢𝗯𝗷𝗲𝗰𝘁𝘀 𝗮𝗻𝗱 𝗣𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲𝘀
+
+What is prototypal inheritance?
+How do you create an object in JavaScript?
+What is the purpose of the prototype property in JavaScript?
+Explain the difference between Object.create and the constructor pattern.
+How do you add a property to an object in JavaScript?
+What is the hasOwnProperty method used for?
+How can you prevent modification of object properties in JavaScript?
+Describe the use of the new keyword.
+Explain the concept of Object Destructuring in JavaScript.
+What is the difference between null and undefined?
+𝟯𝟭-𝟰𝟬: 𝗗𝗢𝗠 𝗠𝗮𝗻𝗶𝗽𝘂𝗹𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗘𝘃𝗲𝗻𝘁𝘀
+
+What is the DOM?
+How do you select elements with Vanilla JavaScript?
+Explain event delegation in JavaScript.
+What is the purpose of the addEventListener method?
+How do you create and remove elements in the DOM?
+Explain the concept of event propagation.
+How can you prevent the default behaviour of an event?
+What is the purpose of the data- attribute in HTML?
+Describe the difference between innerHTML and textContent.
+How do you handle asynchronous code in JavaScript?
+Abdullah Al Habib — 06/10/2024 8:28 PM
+@stn-b2-mern @backlog-b1-mern 
+JavaScript এবং ECMAScript এর মধ্যে কি পার্থক্য এবং কিভাবে তারা সম্পর্কিত?
+Closure কি এবং কিভাবে Lexical Scope-এর সাথে সম্পর্কিত?
+Callback Functions কি, এবং JavaScript-এ Asynchronous Programming এর ভূমিকা কি?
+JavaScript এবং ECMAScript-6 এর মধ্যে var, let, এবং const এর মধ্যে কি পার্থক্য এবং কীভাবে তাদের ব্যবহার করা হয়?
+Promise কি, এবং Fetch API কিভাবে একটি HTTP রিকোয়েস্ট বা একটি এসিঙ্ক্রোনাস অপারেশন সম্পাদন করে?
+ Arrow Functions কি, এবং এটি কেন ব্যবহার করা হয়? এর বৈশিষ্ট্য কি?
+JavaScript-এ Prototype Chain কি এবং ইনহেরিট্যান্সের সাথে সম্পর্ক কি?
+Strict Mode কি এবং কীভাবে এটি ব্যবহার করা হয়? এর কোন উপকারিতা রয়েছে?
+JavaScript Event Loop কি এবং কিভাবে এটি Concurrency Model এর সাথে সম্পর্কিত?
+Hoisting কি এবং Temporal Dead Zone কি? এটি কিভাবে কাজ করে?
+Async/Await কি, এবং এটি Promises-এর সাথে কিভাবে সম্পর্কিত?
+JavaScript-এ কি কি ডাটা টাইপ রয়েছে এবং তাদের বৈশিষ্ট্য কি?
+JavaScript-এ this keyword কী এবং এটি কিভাবে ব্যবহৃত হয়?
+JavaScript-এ Web APIs কি এবং কিভাবে DOM Manipulation করা হয়?
+JavaScript এর মডিউল সিস্টেম কি, এবং ECMAScript-6 এর Modules কিভাবে কাজ করে?
+Abdullah Al Habib — 06/12/2024 8:01 PM
+@stn-b2-mern @backlog-b1-mern 
+Javascript দিয়েই তো আমরা সকল কাজ করতে পারি, তাহলে typescript ইউজ করার কারন কি?
+Generics কি, কিভাবে কাজ করে?
+Getter, Setter কি, কিভাবে কাজ করে?
+Class এ super কিওয়ার্ড এর কাজ কি?
+ধরুন আমি কোন Interface এর সকল প্রোপার্টি অপশনাল করতে চাচ্ছি, তাহলে কি করবো?
+Type Assertion এবং Type Casting এর মধ্যে কি পার্থক্য রয়েছে?
+TypeScript-এ Declaration Merging কি? এটি কীভাবে কাজ করে?
+Union এবং Intersection Types কি? এটি কিভাবে ব্যবহার করা হয়?
+TypeScript প্রজেক্টে কেন এবং কিভাবে tsconfig.json ফাইল ব্যবহার করা হয়?
+React ডেভেলপমেন্টে TypeScript কীভাবে ব্যবহার করা হয় এবং এর পোজিটিভ এবং নেগেটিভ দিক কি?
+
+
+
+
+
+https://docs.google.com/document/d/1BXeq9zgeD6NHP-AxiAdp2yyLWbVrc1B9Ng_jSPNQRMw/edit?usp=sharing
+
+
