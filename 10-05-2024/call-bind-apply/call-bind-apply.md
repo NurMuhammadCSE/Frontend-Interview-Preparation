@@ -8,11 +8,11 @@ call(), bind()ও apply() এই তিনটা মেথডই প্রথম
 
 ```js
 var myCustomObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   job: "Student",
   anotherObj: {
-    name: "Ahmed Zonayed",
+    name: "Coder Nur",
     value: function () {
       console.log("My name is " + this.name);
     },
@@ -22,15 +22,15 @@ myCustomObj.anotherObj.value();
 myCustomObj.anotherObj.value.call(myCustomObj);
 ```
 
-দেখুন এবার প্রিন্ট হয়েছে My name is Zonayed Ahmed, মানে this এর ভ্যালু এখানে আমরা আমাদের মতো করে চেঞ্জ করতে পেরেছি। আরেকটা জিনিস আমরা চাইলে call() টা আমাদের অবজেক্ট এর সাথেও দিতে পারতাম। কিন্তু ঐ যে বললাম call() যেখানে ইউজ করা হয় সেটা সাথে সাথে কল হয়ে যায়, তাই আপনি যেরকম আশা করবেন সেরকম রেজাল্ট নাও আসতে পারেঃ
+দেখুন এবার প্রিন্ট হয়েছে My name is Nur Muhammad, মানে this এর ভ্যালু এখানে আমরা আমাদের মতো করে চেঞ্জ করতে পেরেছি। আরেকটা জিনিস আমরা চাইলে call() টা আমাদের অবজেক্ট এর সাথেও দিতে পারতাম। কিন্তু ঐ যে বললাম call() যেখানে ইউজ করা হয় সেটা সাথে সাথে কল হয়ে যায়, তাই আপনি যেরকম আশা করবেন সেরকম রেজাল্ট নাও আসতে পারেঃ
 
 ```js
 var myCustomObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   job: "Student",
   anotherObj: {
-    name: "Ahmed Zonayed",
+    name: "Coder Nur",
     value: function () {
       console.log("My name is " + this.name);
     }.call(myCustomObj),
@@ -68,11 +68,11 @@ karim.age.call(rahim, 2018);
 
 ```js
 var myCustomObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   job: "Student",
   anotherObj: {
-    name: "Ahmed Zonayed",
+    name: "Coder Nur",
     value: function () {
       console.log("My name is " + this.name);
     },
@@ -119,11 +119,11 @@ bind() ঠিক call() এর মতো হলেও যেখানে call() 
 
 ```js
 var myCustomObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   job: "Student",
   anotherObj: {
-    name: "Ahmed Zonayed",
+    name: "Coder Nur",
     value: function () {
       console.log("My name is " + this.name);
     },
@@ -175,7 +175,7 @@ rahimAgeCalculate(2050, "Hi!");
 
 ```js
 var myObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   timer: function () {
     setTimeout(function () {
@@ -190,7 +190,7 @@ myObj.timer();
 
 ```js
 var myAnotherObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   timer: function () {
     setTimeout(function () {
@@ -213,7 +213,7 @@ console.dir(window);
 
 ```js
 var myObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   timer: function () {
     setTimeout(
@@ -231,7 +231,7 @@ myObj.timer();
 
 ```js
 var myObj = {
-  name: "Zonayed Ahmed",
+  name: "Nur Muhammad",
   age: 21,
   timer: function () {
     setTimeout(
