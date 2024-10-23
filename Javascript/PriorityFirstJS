@@ -1075,16 +1075,6 @@ fetch('https://api.example.com/data')
   .catch(error => console.error('Error:', error));
 এখানে fetch() একটি HTTP রিকোয়েস্ট পাঠায় এবং Promise রিটার্ন করে, যা ডেটা রেসপন্সে ফিরে আসে।
 
-এগুলো হলো আপনার ইন্টারভিউর জন্য প্রথম ৫টি প্রশ্নের বিস্তারিত উত্তর। আরও কোনো প্রশ্ন থাকলে জানাতে পারেন!
-
-
-
-
-
-
-You said:
-next 5
-নিচে আপনার পরবর্তী ৫টি প্রশ্নের উত্তর দেওয়া হলো:
 
 6. Arrow Functions কি, এবং এটি কেন ব্যবহার করা হয়? এর বৈশিষ্ট্য কি?
 উত্তর:
@@ -1126,6 +1116,8 @@ let rabbit = {
 };
 
 console.log(rabbit.eats); // true, Inherited from animal
+
+
 8. Strict Mode কি এবং কীভাবে এটি ব্যবহার করা হয়? এর কোন উপকারিতা রয়েছে?
 উত্তর:
 Strict Mode হলো JavaScript-এর একটি ফিচার যা কোডে কিছু ভুল এবং অনিরাপদ প্র্যাকটিসকে এড়াতে সাহায্য করে। এটি use strict স্টেটমেন্ট দিয়ে চালু করা হয়। Strict Mode-এ কিছু সিনট্যাক্স এরর এবং নিরাপত্তার জন্য নিষিদ্ধ করা হয়েছে।
@@ -1139,6 +1131,8 @@ x = 5; // ReferenceError: x is not defined (in strict mode)
 অঘোষিত ভ্যারিয়েবল ব্যবহার করা থেকে বিরত রাখে।
 নির্দিষ্ট JavaScript ইঞ্জিন অপ্টিমাইজেশনে সহায়তা করে।
 ডুপ্লিকেট প্রপার্টি নাম বা প্যারামিটার ব্যবহার নিষিদ্ধ করে।
+
+
 9. JavaScript Event Loop কি এবং কিভাবে এটি Concurrency Model এর সাথে সম্পর্কিত?
 উত্তর:
 Event Loop হলো JavaScript-এর একটি মেকানিজম যা একক থ্রেডে কিভাবে অ্যাসিঙ্ক্রোনাস কোড চালায় তা পরিচালনা করে। এটি Call Stack এবং Message Queue (বা Task Queue) এর মধ্যে সমন্বয় করে।
@@ -1164,6 +1158,7 @@ Copy code
 Start
 End
 Asynchronous Task
+
 10. Hoisting কি এবং Temporal Dead Zone কি? এটি কিভাবে কাজ করে?
 উত্তর:
 Hoisting হলো JavaScript এর একটি মেকানিজম যেখানে ভ্যারিয়েবল এবং ফাংশন ডিক্লারেশনগুলো তাদের স্কোপের টপে সরানো হয়, যদিও কোডে তাদের ডিক্লারেশন নিচে থাকে।
@@ -1225,6 +1220,8 @@ let str = "Hello";    // String
 let num = 42;         // Number
 let isTrue = true;    // Boolean
 let obj = { name: "Alice" };  // Object
+
+
 13. JavaScript-এ this keyword কী এবং এটি কিভাবে ব্যবহৃত হয়?
 উত্তর:
 this হলো JavaScript-এ একটি স্পেশাল কিওয়ার্ড যা নির্দিষ্ট করে যে কোন অবজেক্টটি বর্তমানে প্রোপার্টি বা মেথড অ্যাক্সেস করছে। এটি ভিন্ন ভিন্ন কনটেক্সটে ভিন্নভাবে কাজ করতে পারে।
@@ -1244,6 +1241,8 @@ const person = {
 };
 
 person.greet(); // Output: Alice
+
+
 14. JavaScript-এ Web APIs কি এবং কিভাবে DOM Manipulation করা হয়?
 উত্তর:
 Web APIs হলো ব্রাউজার দ্বারা প্রদান করা প্রি-ডিফাইন্ড ইন্টারফেস এবং ফাংশন যা আমাদের ব্রাউজারে ইন্টারেকটিভ এবং ডায়নামিক ফিচার তৈরি করতে সাহায্য করে। এগুলো মূলত জাভাস্ক্রিপ্ট দিয়ে কন্ট্রোল করা যায়। কিছু সাধারণ Web APIs হলো:
@@ -1266,6 +1265,8 @@ element.innerText = "Hello, DOM Manipulation!";
 let newElement = document.createElement("p");
 newElement.innerText = "This is a new paragraph.";
 document.body.appendChild(newElement);
+
+
 15. JavaScript এর মডিউল সিস্টেম কি, এবং ECMAScript-6 এর Modules কিভাবে কাজ করে?
 উত্তর:
 JavaScript-এর মডিউল সিস্টেম মূলত কোডকে ভিন্ন ভিন্ন ফাইলে ভাগ করার একটি পদ্ধতি, যাতে কোডকে পুনর্ব্যবহার করা এবং রক্ষণাবেক্ষণ সহজ হয়। ES6 থেকে মডিউল সিস্টেমটি স্ট্যান্ডার্ডাইজ করা হয়েছে।
@@ -1285,19 +1286,3 @@ export function add(a, b) {
 import { add } from './math.js';
 console.log(add(5, 3)); // Output: 8
 ES6 মডিউল সিস্টেম কোডের মডিউলারিটি নিশ্চিত করে এবং নির্ভরশীলতা ম্যানেজ করতে সাহায্য করে।
-
-
-3/3
-
-
-
-
-
-
-
-
-
-
-
-ChatGPT can make mistakes. Check important info.
-?
