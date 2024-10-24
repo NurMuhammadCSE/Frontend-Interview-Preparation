@@ -2,6 +2,8 @@ const parent = document.getElementById("parent");
 const form = document.getElementById("form");
 const button = document.getElementById("button");
 
+// Event Capturing -> Trickling
+
 // parent.addEventListener("click", listener, {
 //   capture: true,
 // });
@@ -25,6 +27,6 @@ function listener(event) {
   console.log(this.tagName);
   //   console.log("click");
   //   console.log(event.target)
-  //   console.log(event.currentTarget)
+    // console.log(event.currentTarget)
   //   console.log(this);
 }

@@ -387,11 +387,16 @@ The Callback queue is a data structure that stores the tasks that have been comp
 
 Event Loop's Workflow:
 Executes tasks from the Call Stack.
+
 For an asynchronous task, such as a timer, it runs in the background. JavaScript proceeds to the next task without waiting.
+
 When the asynchronous task concludes, its callback function is added to the Callback Queue.
+
 If the Call Stack is empty and there are tasks in the Callback Queue, the Event Loop transfers the first task from the Queue to the Call Stack for execution.
+
 setTimeout(() => console.log('Hello from the timer'), 0);
 console.log('Hello from the main code');
+
 setTimeout is processed, and because it's asynchronous, its callback is placed in the Callback Queue.
 The next line, console.log("Hello from the main code"), is logged immediately.
 Although the timer duration is 0 milliseconds, its callback has to wait until the Call Stack is empty. After the main code logs, the callback is moved from the Callback Queue to the Call Stack and executed.

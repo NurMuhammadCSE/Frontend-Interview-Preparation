@@ -1408,7 +1408,7 @@ Memoization optimizes function performance by caching results of expensive funct
 
 Differentiate between loose equality (==) and strict equality (===) operators.
 
-# ========================================================================================
+========================================================================================
 
 Event Bubbling = Child => Parent (Default Behavior)
 Event Capturing/Trickling = Parent => Child (capture: true)
