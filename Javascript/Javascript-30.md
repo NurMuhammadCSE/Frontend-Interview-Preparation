@@ -302,9 +302,9 @@ const mergedObject = { ...obj1, ...obj2 };
 // mergedObject is { a: 1, b: 3, c: 4 }
 ```
 
-### 11. What is a higher-order function?
+### 11. 
 
-Higher-order function in JavaScript is a `function that either takes one or more functions as arguments or returns a function as its result`. In other words, it operates on functions, either by taking them as arguments, returning them, or both.
+Higher-order function in JavaScWhat is a higher-order function?ript is a `function that either takes one or more functions as arguments or returns a function as its result`. In other words, it operates on functions, either by taking them as arguments, returning them, or both.
 
 ```js
 function operationOnArray(arr, operation) {
