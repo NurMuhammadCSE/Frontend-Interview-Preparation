@@ -36,7 +36,7 @@ Most native React form components support both controlled and uncontrolled usage
 // Controlled:
 <input type="text" value={value} onChange={handleChange} />
 
-// Uncontrolled:
+// Uncontrolled:    
 <input type="text" defaultValue="foo" ref={inputRef} />
 // Use `inputRef.current.value` to read the current value of <input>
 

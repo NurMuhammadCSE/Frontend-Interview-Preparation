@@ -13,10 +13,45 @@ My long-term career objective is to grow into a senior full stack developer role
 ==================================================================================================================================================================================
 
 
-"My name is Nur Muhammad, and I’m a full stack developer passionate about building web applications. I’m currently studying Al-Quran and Islamic Studies at Govt. Madrasah-e-Alia, Dhaka, where I’ve developed discipline and a strong work ethic that I apply to my development work.
+"My name is Nur Muhammad, and I’m a full stack developer passionate about building web applications. I’m currently studying Al-Quran and Islamic Studies at Govt. Madrasah-e-Alia, Dhaka.
 
-I’ve worked on projects like Electronic Gadget Hub, an e-commerce platform, and a Car Wash Booking System. In these projects, I used technologies like React, Next.js, TypeScript, Node.js, Express, Mongoose, and MongoDB. One of my biggest achievements was creating a dynamic product management system with user authentication and a persistent cart.
+I’ve worked on projects like Electronic Gadget Hub, an e-commerce platform, and a Car Wash Booking System. In these projects, I used technologies like React, Next.js, TypeScript, Node.js, Express, Mongoose, and MongoDB. One of my biggest achievements was creating a dynamic product management system with user authentication and a persistent cart. I’ve designed admin dashboards that efficiently manage products, orders, and services.
 
-I’m also skilled in Redux for state management and JWT for secure authentication. I’ve designed admin dashboards that efficiently manage products, orders, and services.
+My goal is to become a senior full stack developer in the next 5 years. I see myself contributing to large-scale projects, learning new technologies, and expanding my expertise to deliver scalable web applications.
 
-My goal is to become a senior full stack developer in the next 5 years. I aim to lead projects, mentor others, and contribute to large-scale web applications while constantly learning new technologies."
+=========================================================================================
+
+My name is Nur Muhammad, but you can call me Nur. I’m currently studying Al-Quran and Islamic Studies at Govt. Madrasah-e-Alia, Dhaka.
+
+I’m also a full stack developer specializing in the MERN stack, and my development journey began in 2020. Over the years, I’ve built a range of projects, including Electronic Gadget Hub, an e-commerce platform, and a Car Wash Booking System.
+
+For my Electronic Gadget Hub project, I use these technologies such as Next, Next UI, Redux, Typescript, Node, Express Mongoose, MongoDB
+
+Feature: 
+
+Login / Register: Separate pages for user registration and secure login.
+
+Dashboard Pages:
+Admin: Manage products and orders (Add Product, Orders Management).
+User: View orders and add product ratings.
+
+Product Pages:
+Product Listing: Categories (e.g., /mobile, /tv) with "Add to Cart" options.
+Product Details: Reviews section and add-to-cart functionality.
+
+Checkout Page: Order summary, Cash on Delivery option
+
+Next Project is Car Wash Booking System, I use these technologies such as React, Redux, TypeScript, Tailwind CSS, Node.js, Express.js, Mongoose, MongoDB, Redux Toolkit, RTK Query.
+
+User Registration & Login: Secure and easy authentication for users.
+Service Browsing: Effortlessly view and filter car wash services.
+Service Booking: Select and book available time slots for your car wash services.
+User Dashboard: Manage your bookings, view booking history, and update personal information.
+Admin Dashboard: Oversee and manage services, slots, and users efficiently.
+Payment Integration: Securely process payments via AAMARPAY.
+Review System: Submit and view reviews for car wash services.
+
+
+===================================
+
+weakness :
